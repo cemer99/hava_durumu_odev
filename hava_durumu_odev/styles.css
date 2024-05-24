@@ -1,0 +1,56 @@
+html {
+  background: url("https://images.unsplash.com/photo-1525713788066-275d83a11fe5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGluayUyMHNreXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=400&q=100")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background: none;
+  color: white;
+}
+
+.container {
+  width: 480px;
+  text-align: start;
+  margin-top: 100px;
+}
+
+.container h1,
+label {
+  font-weight: 900;
+  color: rgb(167, 3, 167);
+
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: rgb(115, 255, 0);
+  --stroke-color: lightblue;
+
+  text-shadow: var(--x-offset) var(--y-offset) 0px var(--background-color),
+    calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke))
+      0px var(--stroke-color);
+}
+
+.container label {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+.btn {
+  background: purple;
+  color: rgb(115, 255, 0);
+}
+.btn:hover {
+  font-weight: bold;
+  color: rgb(115, 255, 0);
+}
+.alert-secondary {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #fff !important;
+  border: none !important;
+  outline: none !important;
+}
