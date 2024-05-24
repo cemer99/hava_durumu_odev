@@ -6,7 +6,7 @@
         $error = "Input field is empty!";
       }
       if($_GET['city']){
-        $apiData = file_get_contents("https://api.openweathermap.org/data/2.5/weather?q=" . $_GET['city'] . "&appid=8e7070eb9f7a573b1fdcf58e26e51aa1&lang=tr");
+        $apiData = file_get_contents("https://api.openweathermap.org/data/2.5/weather?q=" . $_GET['city'] . "&appid=YOUR_API&lang=tr");
         $weatherArray = json_decode($apiData, true);
         // C = K -273.15
         $tempCelcius = $weatherArray['main']['temp'] -273;
